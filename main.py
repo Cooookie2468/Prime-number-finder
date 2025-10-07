@@ -3,7 +3,7 @@ from math import *
 primes = []
 notPrimes = {}
 
-for testing in range(2,500):
+for testing in range(2,int(input('what number do you want find primes below? '))):
     prime = True
     for trying in range(2,ceil(sqrt(testing))):
         if testing%trying == 0:
@@ -13,5 +13,5 @@ for testing in range(2,500):
     if prime == True:
         primes.append(testing)
         notPrimes[testing]=[]
-print(primes)
-print(notPrimes)
+print(f'primes:\n{primes}')
+print(f'not primes and what they are first divisable by:\n{notPrimes}')
