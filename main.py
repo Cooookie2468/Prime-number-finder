@@ -2,16 +2,16 @@ from math import *
 
 primes = []
 
-trying = 1
+testing = 2
 while True:
-    testing = 1
+    trying = 2
     prime = True
-    while trying < sqrt(testing):
+    while trying <= sqrt(testing):
         if testing/trying != 0:
             prime = False
         trying += 1
     if prime == True:
         primes.append(testing)
-    trying += 1 
+    testing += 1 
     print(primes)
     
